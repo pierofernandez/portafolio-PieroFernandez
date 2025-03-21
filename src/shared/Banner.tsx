@@ -1,6 +1,14 @@
 import { FaBirthdayCake, FaFigma, FaGithub, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaTiktok } from "react-icons/fa";
 
 export const Banner = () => {
+
+    const phoneNumber = '+51992431858'; // Reemplaza con tu número de WhatsApp
+    const defaultMessage = '👋 ¡Hola! Gracias por contactarme. Soy Piero Fernández, Desarrollador Full Stack Jr. y Analista de Datos Jr. 🚀\n\n📌 Servicios que ofrezco:\n✅ Desarrollo y mantenimiento de páginas web y aplicaciones.\n✅ Creación de dashboards y visualización de datos (Power BI, Tableau).\n✅ Análisis de datos y optimización de procesos.\n✅ Automatización y desarrollo de software a medida.\n\n💼 ¿En qué puedo ayudarte? Escríbeme con los detalles de tu proyecto y con gusto te atenderé.\n\n📩 También puedes enviarme un correo a: pierofernandezz48@gmail.com\n🌐 Portafolio: [tu web o LinkedIn]\n\n¡Espero tu mensaje! 📲';
+  
+    // URL de WhatsApp
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
+  
+
     return (
         <div className="bg-black text-white min-h-screen p-5">
             {/* Contenedor principal con Grid */}
@@ -41,12 +49,21 @@ export const Banner = () => {
                 {/* Columna derecha */}
                 <div className="md:text-right">
                     <div className="flex flex-row md:flex-col items-center justify-center w-full md:items-end md:w-auto gap-6 mb-5 md:gap-4 md:mr-36">
-                        <button className="text-sm md:text-base py-4 px-8 md:py-4 md:px-12 border-none rounded-full bg-white text-black">
+                        <a 
+                            href={whatsappUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="text-sm md:text-base py-4 px-8 md:py-4 md:px-12 border-none rounded-full bg-white text-black"                        
+                        >
                             Contáctame
-                        </button>
-                        <button className="text-sm md:text-base py-4 px-8 md:py-4 md:px-11 border-2 border-white rounded-full bg-black text-white">
+                        </a>
+                        <a
+                            href="img/CvPieroFernandez.pdf"
+                            download="CvPieroFernandez.pdf"
+                            className="text-sm md:text-base py-4 px-8 md:py-4 md:px-11 border-2 border-white rounded-full bg-black text-white text-center"
+                        >
                             Descargar CV
-                        </button>
+                        </a>
                     </div>
                 </div>
             </div>
