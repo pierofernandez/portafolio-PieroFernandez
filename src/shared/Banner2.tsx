@@ -1,60 +1,65 @@
 export const Banner2 = () => {
     return (
         <>
-            <div style={{
-                borderTop: "0.5px solid #333333", // Línea blanca de 4px de grosor
-                paddingTop: "10px", // Espaciado entre la línea y el texto
-                width: "100vw", // Ocupa el 100% del ancho de la pantalla
-                marginLeft: "-20px", // Compensa el padding del contenedor principal
-            }}>
-                <h2 style={{
-                    color: "white",
-                    padding: "20px",
-                    fontFamily: "Poppins",
-                    textAlign: "center",
-                    marginBottom: "60px",
-                    marginTop: "40px"
-                }}>
-                    SKILLS
-                </h2>
+            <div className=" border-gray-800 pt-2  px-5">
+                <h2 className="text-white px-5 font-Poppins text-center mt-10 mb-14 md:text-2xl text-sm">SKILLS</h2>
 
-                <h1 style={{ color: "gray", fontFamily: "Poppins", textAlign: "center", marginTop: "20px", marginBottom: "40px" }}>Tecnologías que uso día a día</h1>
-
-                <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginTop: "20px" }}>
-                    <img src="img/WorkingTechs.png" alt="tec" />
+                <h1 className="text-gray-400 font-Poppins text-center mt-5 mb-10 md:text-lg text-sm">Tecnologías que uso día a día</h1>
+                <div className="w-[300px] md:w-[1000px] h-20 overflow-hidden mt-5 mx-auto relative">
+                    <div className="flex w-max animate-scroll items-center">
+                        <img src="img/WorkingTechs.png" alt="tec" className="h-10 sm:h-12 md:h-16 lg:h-20" />
+                        <img src="img/WorkingTechs.png" alt="tec" className="ml-5 h-10 sm:h-12 md:h-16 lg:h-20" />
+                    </div>
                 </div>
 
-                <h1 style={{ color: "gray", fontFamily: "Poppins", textAlign: "center", marginTop: "50px", marginBottom: "40px" }}>Algunas otras que utilice en algunos proyectos</h1>
-
-                <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginTop: "50px" }}>
-                    <img src="img/ProjectsTechs.png" alt="tec" />
+                <h1 className="text-gray-400 font-Poppins text-center mt-12 mb-10 md:text-2xl text-sm">Algunas otras que utilicé en algunos proyectos</h1>
+                <div className="w-[300px] md:w-[1000px] h-20 overflow-hidden mt-5 mx-auto relative">
+                    <div className="flex w-max animate-scroll items-center">
+                        <img src="img/ProjectsTechs.png" alt="tec" className="h-10 sm:h-12 md:h-16 lg:h-20 " />
+                        <img src="img/ProjectsTechs.png" alt="tec" className=" ml-5 h-10 sm:h-12 md:h-16 lg:h-20" />
+                        <img src="img/ProjectsTechs.png" alt="tec" className=" ml-5 h-10 sm:h-12 md:h-16 lg:h-20" />
+                    </div>
                 </div>
 
-                <h2 style={{ color: "white", padding: "20px", fontFamily: "Poppins", textAlign: "center", marginBottom: "80px", marginTop: "80px" }}>SOBRE MI</h2>
+                <h2 className="text-white px-5 font-Poppins text-center mt-20 mb-20 md:text-2xl text-sm">SOBRE MI</h2>
 
-                <div className="flex items-center justify-center bg-black px-5 min-h-32">
-                    <div className="flex items-start justify-center max-w-8xl w-full">
+                <div className="flex items-center justify-center bg-black  min-h-32">
+                    <div className="flex flex-col sm:flex-row items-center sm:items-start px-5 justify-center max-w-8xl w-full">
 
                         {/* Círculo azul */}
-                        <div className="min-w-96 h-96 bg-gray-900 rounded-full mr-20"></div>
+                        <div className="md:min-w-96 md:h-96 w-80 h-80 bg-gray-900 rounded-full mb-5 sm:mb-0 sm:mr-20"></div>
 
                         {/* Contenido de texto */}
-                        <div className="text-white ml-10">
-                            <h1 className="text-4xl font-Raleway font-bold mt-4">
+                        <div className="text-white text-center sm:text-left">
+                            <h1 className="md:text-4xl text-3xl font-Raleway font-bold mt-4 mb-10">
                                 Piero Alejandro <br /> Fernández Blas
                             </h1>
 
-                            <ul  className="mt-5 space-y-2 text-sm font-normal text-gray-200">
+                            {/* Texto para pantallas pequeñas */}
+                            <p className="mt-5 text-sm font-normal text-gray-200 text-justify  sm:hidden">
+                                👋 ¡Hola! Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero.
+                                Tengo más de un año de experiencia trabajando con interfaces en JavaScript, React JS y TypeScript.
+                                Actualmente curso el 7mo ciclo de Ingeniería de Sistemas en la Universidad Privada del Norte y
+                                me apasiona el desarrollo Front-end con React, React Native, VueJS, así como el Análisis de Datos.
+                                ¡Un gusto!
+                                <br /><br />
+                                🚀 Trato de aprender y mejorar cada día para brindarles el mejor servicio.
+                            </p>
+
+                            {/* Texto para pantallas grandes */}
+                            <ul className="mt-5 space-y-2 text-sm font-normal text-gray-200  hidden sm:block">
                                 <li>👋 Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero, ¡un gusto!</li>
                                 <li>🛠️ Ya más de 1 año desarrollándome en interfaces con JavaScript, ReactJS y TypeScript.</li>
                                 <li>📍 Actualmente me encuentro en el 7mo ciclo de la carrera de Ing. Sistemas en la Universidad Privada del Norte.</li>
-                                <li>💡 Intereses en desarrollo Front-end con React, React Native y Análisis de Datos.</li> <br /><br />
+                                <li>💡 Intereses en desarrollo Front-end con React, React Native y Análisis de Datos.</li>
+                                <br /><br />
                                 <li>🚀 Trato de aprender y mejorar cada día para brindarles el mejor servicio.</li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
+
             </div>
         </>
     );
