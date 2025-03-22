@@ -1,20 +1,20 @@
-import { FaBirthdayCake, FaFigma, FaGithub, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaTiktok } from "react-icons/fa";
+import { FaFigma, FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 export const Banner = () => {
 
     const phoneNumber = '+51992431858'; // Reemplaza con tu número de WhatsApp
     const defaultMessage = '👋 ¡Hola! Gracias por contactarme. Soy Piero Fernández, Desarrollador Full Stack Jr. y Analista de Datos Jr. 🚀\n\n📌 Servicios que ofrezco:\n✅ Desarrollo y mantenimiento de páginas web y aplicaciones.\n✅ Creación de dashboards y visualización de datos (Power BI, Tableau).\n✅ Análisis de datos y optimización de procesos.\n✅ Automatización y desarrollo de software a medida.\n\n💼 ¿En qué puedo ayudarte? Escríbeme con los detalles de tu proyecto y con gusto te atenderé.\n\n📩 También puedes enviarme un correo a: pierofernandezz48@gmail.com\n🌐 Portafolio: [tu web o LinkedIn]\n\n¡Espero tu mensaje! 📲';
-  
+
     // URL de WhatsApp
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
-  
+
 
     return (
-        <div className="bg-black text-white min-h-screen p-5">
+        <div className="bg-black text-white p-5 overflow-hidden">
             {/* Contenedor principal con Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] md:gap-10 mt-5 items-center text-center md:text-left">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 max-w-screen-2xl mx-auto mt-5 items-center text-center md:text-left">
                 {/* Columna izquierda */}
-                <div className="md:ml-36">
+                <div className="md:ml-20 lg:ml-36">
                     <button className="bg-gradient-to-r from-blue-900 to-blue-500 text-white py-4 px-10 rounded-full border-none text-2xl font-bold items-center gap-2 shadow-lg cursor-pointer mx-auto md:mx-0 hidden md:flex">
                         👋 Saludos!
                     </button>
@@ -23,7 +23,9 @@ export const Banner = () => {
                         <span className="hidden md:inline"><br /></span>Fernández
                     </h1>
 
-                    <p className="text-gray-400 md:mb-8 md:text-lg text-xs mb-8">Front-end Developer Jr - Data Analyst Jr</p>
+                    <p className="text-gray-400 md:mb-8 md:text-lg text-xs mb-8">
+                        Full Stack Developer Jr / Data Analyst Jr
+                    </p>
                     <div className="flex gap-2 text-gray-400 justify-center md:justify-start">
                         <FaLinkedin size={30} />
                         <FaGithub size={30} />
@@ -31,29 +33,26 @@ export const Banner = () => {
                 </div>
 
                 {/* Columna central */}
-                <div>
-                    <div className="relative mt-8 md:mt-24 md:mb-12 mb-10 flex justify-center md:justify-center">
+                <div className="flex flex-col items-center justify-center">
+                    <div className="relative mt-8 md:mt-24 md:mb-12 mb-10 flex justify-center">
                         {/* Imagen */}
                         <img
                             src="img/pieroanimado.jpg"
                             alt="Profile"
-                            className="md:rounded-full rounded-3xl w-80 h-80 md:w-80 md:h-80 relative z-10"
+                            className="md:rounded-full rounded-3xl w-72 h-72 md:w-80 md:h-80 relative z-10"
                         />
                     </div>
 
-                    <p className="flex items-center justify-center gap-4 font-light mt-0 mb-10 md:text-xl text-xs">
-                        <FaMapMarkerAlt /> Lima, Perú <FaBirthdayCake className="ml-0" /> Joined on Jun 21, 2004
-                    </p>
                 </div>
 
                 {/* Columna derecha */}
-                <div className="md:text-right">
-                    <div className="flex flex-row md:flex-col items-center justify-center w-full md:items-end md:w-auto gap-6 mb-5 md:gap-4 md:mr-36">
-                        <a 
+                <div className="flex flex-col items-center md:items-end">
+                    <div className="flex flex-wrap justify-center md:justify-end  gap-8 md:gap-4 mb-5 md:-mr-52 lg:mr-36">
+                        <a
                             href={whatsappUrl}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-sm md:text-base py-4 px-8 md:py-4 md:px-12 border-none rounded-full bg-white text-black"                        
+                            className="text-sm md:text-base py-4 px-8 md:py-4 md:px-12 border-none rounded-full bg-white text-black"
                         >
                             Contáctame
                         </a>
@@ -67,6 +66,9 @@ export const Banner = () => {
                     </div>
                 </div>
             </div>
+
+
+
 
             {/* Redes sociales */}
             <div>
@@ -87,7 +89,6 @@ export const Banner = () => {
                         </div>
                     ))}
                 </div>
-
                 {/* Diseño para pantallas pequeñas */}
                 <div className="grid grid-cols-3 gap-2 md:hidden mt-5 mb-10 px-2">
                     {[
@@ -109,8 +110,6 @@ export const Banner = () => {
                         </div>
                     ))}
                 </div>
-
-
 
             </div>
         </div>

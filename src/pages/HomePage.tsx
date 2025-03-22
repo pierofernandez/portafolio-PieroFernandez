@@ -1,3 +1,4 @@
+import SplashCursor from "../animations/SplashCursor"
 import { Banner } from "../shared/Banner"
 import { Banner2 } from "../shared/Banner2"
 import { Banner3 } from "../shared/Banner3"
@@ -12,6 +13,8 @@ export const HomePage = () => {
             <Banner2/>
             <Banner3/>
             <Footer/>
+            <SplashCursor />
+
         </div>
     
     )
