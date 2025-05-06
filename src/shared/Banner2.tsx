@@ -1,31 +1,32 @@
 export const Banner2 = () => {
     return (
-        <>
-            <div className=" border-gray-800 pt-2 mt-20 px-5">
+        
+            <div className=" border-gray-800 pt-2  px-5">
                 <h2 className="text-white px-5 font-Poppins text-center mt-10 mb-14 md:text-2xl text-sm">SKILLS</h2>
 
                 <h1 className="text-gray-400 font-Poppins text-center mt-5 mb-10 md:text-lg text-sm">Tecnologías que uso día a día</h1>
                 <div className="h-20 flex justify-center items-center mt-5 mx-auto relative">
-                    <img src="img/WorkingTechs.png" alt="tec" className="h-10 sm:h-10 md:h-14 lg:h-20" />
+                    <img src="img/WorkingTechs.png" alt="tec" className="h-8 sm:h-10 " />
                 </div>
 
                 <h1 className="text-gray-400 font-Poppins text-center mt-5 mb-10 md:text-lg text-sm">Algunas otras que utilicé en algunos proyectos</h1>
                 <div className="overflow-hidden mt-5 mx-auto flex justify-center">
-                    <img src="img/ProjectsTechs.png" alt="tec" className="h-10 sm:h-12 md:h-14 lg:h-20" />
+                    <img src="img/ProjectsTechs.png" alt="tec" className="h-8 sm:h-10 " />
                 </div>
 
 
-                <h2 className="text-white px-5 font-Poppins text-center mt-20 mb-20 md:text-2xl text-sm">SOBRE MI</h2>
+                <h2 className="text-white px-5 font-Poppins text-center mt-20 mb-24 md:text-2xl text-sm">SOBRE MI</h2>
 
                 <div className="flex items-center justify-center bg-black  min-h-32">
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start px-5 justify-center max-w-8xl w-full">
+                    <div className="flex flex-col lg:flex-row items-center lg:items-start px-5 justify-center max-w-8xl w-full">
 
                         {/* Círculo azul */}
-                        <div className="md:min-w-96 md:h-96 w-80 h-80 bg-gray-900 rounded-full mb-5 sm:mb-0 sm:mr-20"></div>
+                        <img src="img/terno.jpg" className="md:min-w-96 md:h-96 w-80 h-80 rounded-full mb-5 sm:mb-5 lg:mr-20"
+                        />
 
                         {/* Contenido de texto */}
                         <div className="text-white text-center sm:text-left">
-                            <h1 className="md:text-4xl text-3xl font-Raleway font-bold mt-4 mb-10">
+                            <h1 className="md:text-4xl text-3xl font-Raleway sm:text-center font-bold mt-4 mb-10">
                                 Piero Alejandro <br /> Fernández Blas
                             </h1>
 
@@ -55,6 +56,5 @@ export const Banner2 = () => {
                 </div>
 
             </div>
-        </>
     );
 };
