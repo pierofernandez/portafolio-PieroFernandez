@@ -64,7 +64,7 @@ export const Banner3 = () => {
     };
     return (
 
-        <>
+        <section id="portafolio" >
             <h2 className="text-white px-5 font-Poppins text-center mt-24 mb-16 md:text-2xl text-sm">
                 PROYECTOS
             </h2>
@@ -156,7 +156,7 @@ export const Banner3 = () => {
 
                 </div>
             </div>
-        </>
+        </section>
     );
 };
 
