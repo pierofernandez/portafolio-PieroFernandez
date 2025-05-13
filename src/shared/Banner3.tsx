@@ -111,7 +111,20 @@ export const Banner3 = () => {
 
             <div className="bg-black text-white flex flex-col justify-center items-center px-5 sm:px-8 lg:px-16 xl:px-32 mb-56">
                 <div className="w-full max-w-5xl p-5">
-                    {/* Google */}
+                    <div className="flex flex-col space-y-2 mb-10">
+                        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between">
+                            <div className="flex items-center space-x-3">
+                                <img src="img/progresemos.png" alt="" className="w-16 h-14" />
+                                <h2 className="text-base sm:text-lg font-bold">Desarrollador Web - ONG Progresemos Juntos</h2>
+                            </div>
+                            <span className="text-gray-400 text-xs sm:text-sm mt-2 sm:mt-0">Mayo - Actual 2025</span>
+                        </div>
+                        <p className="text-gray-400 text-xs sm:text-sm text-justify">
+                            <li className="mb-4">Progresemos Juntos es una organización nacional sin fines de lucro con sede principal en la Región de Arequipa.
+                            </li>
+                        </p>
+                    </div>
+
                     <div className="flex flex-col space-y-2 mb-10">
                         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between">
                             <div className="flex items-center space-x-3">
@@ -152,8 +165,6 @@ export const Banner3 = () => {
                             </li>
                         </p>
                     </div>
-
-
                 </div>
             </div>
         </section>
