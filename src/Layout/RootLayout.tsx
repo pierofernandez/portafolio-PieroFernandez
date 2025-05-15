@@ -1,15 +1,15 @@
 import { Outlet } from "react-router-dom";
+import { Footer } from "../shared/Footer";
 
 export const RootLayout = () => {
     return (
-        <>
-            <div style={{ backgroundColor: "black", color: "white", minHeight: "100vh", paddingTop: "20px" }}>
+        <div className="bg-black text-white min-h-screen pt-5">
+            <main className="max-w-screen-2xl mx-auto px-4">
+                <Outlet />
+            </main>
+                  <Footer />
 
-                <main className=' '>
-                    <Outlet />
-                </main>
-
-            </div>
-        </>
+        </div>
+        
     );
 };

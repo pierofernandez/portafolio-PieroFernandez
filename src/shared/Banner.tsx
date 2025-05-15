@@ -1,6 +1,12 @@
+import Aos from "aos";
+import { useEffect } from "react";
 import { FaFigma, FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 export const Banner = () => {
+
+    useEffect(() => {
+        Aos.init({ duration: 800, once: true });
+    }, []);
 
     const phoneNumber = '+51992431858'; // Reemplaza con tu número de WhatsApp
     const defaultMessage = '👋 ¡Hola! Gracias por contactarme. Soy Piero Fernández, Desarrollador Full Stack Jr. y Analista de Datos Jr. 🚀\n\n📌 Servicios que ofrezco:\n✅ Desarrollo y mantenimiento de páginas web y aplicaciones.\n✅ Creación de dashboards y visualización de datos (Power BI, Tableau).\n✅ Análisis de datos y optimización de procesos.\n✅ Automatización y desarrollo de software a medida.\n\n💼 ¿En qué puedo ayudarte? Escríbeme con los detalles de tu proyecto y con gusto te atenderé.\n\n📩 También puedes enviarme un correo a: pierofernandezz48@gmail.com\n🌐 Portafolio: [tu web o LinkedIn]\n\n¡Espero tu mensaje! 📲';
@@ -21,7 +27,9 @@ export const Banner = () => {
                 {/* Contenedor principal con Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-10 max-w-screen-2xl mx-auto mt-5 items-center text-center md:text-left">
                     {/* Columna izquierda */}
-                    <div className="md:ml-20 ">
+                    <div data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration="800" className="md:ml-20 ">
                         <button className="bg-gradient-to-r from-blue-900 to-blue-500 text-white py-4 px-10 rounded-full border-none text-2xl font-bold items-center gap-2 shadow-lg cursor-pointer mx-auto md:mx-0 hidden md:flex">
                             👋 Saludos!
                         </button>
@@ -44,7 +52,8 @@ export const Banner = () => {
                     </div>
 
                     {/* Columna central */}
-                    <div className="flex flex-col items-center justify-center">
+                    <div data-aos="zoom-in-up" data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration="600" className="flex flex-col items-center justify-center">
                         <div className="relative mt-8 md:mt-24 md:mb-12 mb-10 flex justify-center">
                             {/* Imagen */}
                             <img
@@ -57,7 +66,9 @@ export const Banner = () => {
                     </div>
 
                     {/* Columna derecha */}
-                    <div className="flex flex-col items-center md:items-end">
+                    <div data-aos="fade-left"
+                        data-aos-offset="300"
+                        data-aos-easing="ease-in-sine" data-aos-duration="800" className="flex flex-col items-center md:items-end">
                         <div className="flex flex-wrap justify-center md:justify-end  gap-8 md:gap-4 mb-5 md:-mr-52 xl:mr-36">
                             <a
                                 href={whatsappUrl}
@@ -84,7 +95,7 @@ export const Banner = () => {
                 {/* Redes sociales */}
                 <div>
                     {/* Diseño para pantallas grandes */}
-                    <div className="hidden md:flex flex-wrap justify-center gap-6 mt-8">
+                    <div data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-sine" className="hidden md:flex flex-wrap justify-center gap-6 mt-28">
                         {[
                             { src: "img/tiktok.png", count: "3.4k", alt: "TikTok", href: tiktokUrl },
                             { src: "img/github.svg.svg", count: "20", alt: "GitHub", href: githubUrl },
@@ -107,7 +118,7 @@ export const Banner = () => {
                     <div className="grid grid-cols-3 gap-2 md:hidden mt-5 mb-10 px-2">
                         {[
                             { icon: <FaGithub size={28} />, name: "GitHub", user: "@pierofernandezz21", bg: "bg-gray-800", cols: "col-span-3", href: githubUrl },
-                            { icon: <FaFigma size={28} />, name: "Figma", user: "@pierofernandezz21", bg: "bg-gray-700", cols: "col-span-2 row-span-2", href: figmaUrl },
+                            { icon: <FaFigma size={28} />, name: "Figma", user: "@pierofernandezz21", cols: "col-span-2 row-span-2", href: figmaUrl, bg: "bg-figma-gradient" },
                             { icon: <FaTiktok size={28} />, name: "Tiktok", user: "@pietrosky04", bg: "bg-gray-950 text-white", cols: "col-span-1", href: tiktokUrl },
                             { icon: <FaLinkedin size={28} />, name: "LinkedIn", user: "@pierofhernandez", bg: "bg-blue-600", cols: "col-span-1", href: linkedinUrl },
                             { icon: <FaInstagram size={28} />, name: "Instagram", user: "@piero_fernandezz", bg: "bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500", cols: "col-span-3", href: instagramUrl },
@@ -117,6 +128,9 @@ export const Banner = () => {
                                 href={social.href}
                                 target="_blank"
                                 rel="noopener noreferrer"
+                                data-aos="fade-up"
+                                data-aos-delay={`${index * 150}`} // 👈 delay progresivo
+                                data-aos-duration="600"
                                 className={`relative ${social.bg} p-2.5 rounded-2xl flex flex-col items-start justify-between w-full text-white ${social.cols}`}
                             >
                                 <div className="flex items-center justify-between w-full">
@@ -130,6 +144,7 @@ export const Banner = () => {
                             </a>
                         ))}
                     </div>
+
 
                 </div>
             </div>
