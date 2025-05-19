@@ -8,12 +8,6 @@ export const Banner = () => {
         Aos.init({ duration: 800, once: true });
     }, []);
 
-    const phoneNumber = '+51992431858'; // Reemplaza con tu número de WhatsApp
-    const defaultMessage = '👋 ¡Hola! Gracias por contactarme. Soy Piero Fernández, Desarrollador Full Stack Jr. y Analista de Datos Jr. 🚀\n\n📌 Servicios que ofrezco:\n✅ Desarrollo y mantenimiento de páginas web y aplicaciones.\n✅ Creación de dashboards y visualización de datos (Power BI, Tableau).\n✅ Análisis de datos y optimización de procesos.\n✅ Automatización y desarrollo de software a medida.\n\n💼 ¿En qué puedo ayudarte? Escríbeme con los detalles de tu proyecto y con gusto te atenderé.\n\n📩 También puedes enviarme un correo a: pierofernandezz48@gmail.com\n🌐 Portafolio: [tu web o LinkedIn]\n\n¡Espero tu mensaje! 📲';
-
-    // URL de WhatsApp
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(defaultMessage)}`;
-
     const tiktokUrl = 'https://www.tiktok.com/@pietrosky04';
     const instagramUrl = 'https://www.instagram.com/byte_p1er0';
     const linkedinUrl = 'https://www.linkedin.com/in/piero-fern%C3%A1ndez/';
@@ -71,7 +65,7 @@ export const Banner = () => {
                         data-aos-easing="ease-in-sine" data-aos-duration="800" className="flex flex-col items-center md:items-end">
                         <div className="flex flex-wrap justify-center md:justify-end  gap-8 md:gap-4 mb-5 md:-mr-52 xl:mr-36">
                             <a
-                                href={whatsappUrl}
+                                href="/contact"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-sm md:text-base py-4 px-8 md:py-4 md:px-12 border-none rounded-full bg-white text-black"

@@ -8,14 +8,12 @@ import { Navbar } from "../shared/Navbar"
 export const HomePage = () => {
     return (
         <div>
-            <Navbar/>
-            <Banner/>
-            <Banner4/>
-            <Banner2/>
-            <Banner3/>
+            <Navbar />
+            <Banner />
+            <Banner4 />
+            <Banner2 />
+            <Banner3 />
             <SplashCursor />
         </div>
-    
     )
-        
 }
