@@ -23,7 +23,7 @@ export const Banner2 = () => {
                             <p className="mt-5 text-sm font-normal text-gray-200 text-justify  sm:hidden">
                                 👋 ¡Hola! Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero.
                                 Tengo más de un año de experiencia trabajando con interfaces en JavaScript, React JS y TypeScript.
-                                Actualmente curso el 7mo ciclo de Ingeniería de Sistemas en la Universidad Privada del Norte y
+                                Actualmente curso el 7mo ciclo de Ingeniería de Sistemas y
                                 me apasiona el desarrollo Front-end con React, React Native, VueJS, así como el Análisis de Datos.
                                 ¡Un gusto!
                                 <br /><br />
@@ -34,7 +34,7 @@ export const Banner2 = () => {
                             <ul className="mt-5 space-y-2 text-sm font-normal text-gray-200  hidden sm:block">
                                 <li>👋 Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero, ¡un gusto!</li>
                                 <li>🛠️ Ya más de 1 año desarrollándome en interfaces con JavaScript, ReactJS y TypeScript.</li>
-                                <li>📍 Actualmente me encuentro en el 7mo ciclo de la carrera de Ing. Sistemas en la Universidad Privada del Norte.</li>
+                                <li>📍 Actualmente me encuentro en el 7mo ciclo de la carrera de Ing. Sistemas.</li>
                                 <li>💡 Intereses en desarrollo Front-end con React, React Native y Análisis de Datos.</li>
                                 <br /><br />
                                 <li>🚀 Trato de aprender y mejorar cada día para brindarles el mejor servicio.</li>
