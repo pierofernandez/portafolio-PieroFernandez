@@ -63,7 +63,7 @@ export const Banner = () => {
                     <div data-aos="fade-left"
                         data-aos-offset="300"
                         data-aos-easing="ease-in-sine" data-aos-duration="800" className="flex flex-col items-center md:items-end">
-                        <div className="flex flex-wrap justify-center md:justify-end  gap-8 md:gap-4 mb-5 md:-mr-52 xl:mr-36">
+                        <div className="flex flex-wrap justify-center md:justify-end  gap-4 md:gap-4 mb-5 md:-mr-52 xl:mr-36">
                             <a
                                 href="/contact"
                                 target="_blank"
@@ -73,8 +73,8 @@ export const Banner = () => {
                                 Contáctame
                             </a>
                             <a
-                                href="img/Cv_PieroFernandez2025.pdf"
-                                download="Cv_PieroFernandez2025.pdf"
+                                href="img/cv_pierofernandez2025.pdf"
+                                download="cv_pierofernandez2025.pdf"
                                 className="text-sm md:text-base py-4 px-8 md:py-4 md:px-11 border-2 border-white rounded-full bg-black text-white text-center"
                             >
                                 Descargar CV
