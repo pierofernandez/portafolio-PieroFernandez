@@ -69,6 +69,11 @@ export const Banner3 = () => {
             fecha: "Mayo - Actual 2025",
             items: [
                 "Progresemos Juntos es una organización nacional sin fines de lucro con sede principal en la Región de Arequipa.",
+                "Desarrollo de interfaces de usuario modernas y adaptables usando React, TypeScript y TailwindCSS.",
+                "Diseño y gestión a la base de datos MongoDB, asegurando eficiencia en la estructura y consultas. ",
+                "Implementación colaborativa en funcionalidades clave del flujo de compra, incluyendo autenticación, carrito y pagos.  ",
+                "Colaboró activamente con el equipo de diseño y producto para iterar mejoras y nuevas funcionalidades. ",
+
             ],
         },
         {

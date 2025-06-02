@@ -94,7 +94,7 @@ export const Banner = () => {
                             { src: "img/tiktok.png", count: "3.4k", alt: "TikTok", href: tiktokUrl },
                             { src: "img/github.svg.svg", count: "20", alt: "GitHub", href: githubUrl },
                             { src: "img/instagram.png", count: "2.6k", alt: "Instagram", href: instagramUrl },
-                            { src: "img/linkedin.svg.svg", count: "20", alt: "LinkedIn", href: linkedinUrl },
+                            { src: "img/linkedin.svg.svg", count: "08", alt: "LinkedIn", href: linkedinUrl },
                             { src: "img/figma.svg.svg", count: "20", alt: "Figma", href: figmaUrl }
                         ].map((social, index) => (
                             <div key={index} className="text-center w-1/3 md:w-auto">

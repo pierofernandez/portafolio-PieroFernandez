@@ -35,7 +35,7 @@ export const Banner2 = () => {
                                 <li>👋 Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero, ¡un gusto!</li>
                                 <li>🛠️ Ya más de 1 año desarrollándome en interfaces con JavaScript, ReactJS y TypeScript.</li>
                                 <li>📍 Actualmente me encuentro en el 7mo ciclo de la carrera de Ing. Sistemas.</li>
-                                <li>💡 Intereses en desarrollo FullStack con React, React Native y Análisis de Datos.</li>
+                                <li>💡 Intereses en desarrollo FullStack con React, React Native, Angular VueJS, así como el Análisis de Datos.</li>
                                 <br /><br />
                                 <li>🚀 Trato de aprender y mejorar cada día para brindarles el mejor servicio.</li>
                             </ul>
