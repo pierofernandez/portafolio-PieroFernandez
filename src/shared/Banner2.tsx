@@ -11,7 +11,7 @@ export const Banner2 = () => {
                         <div data-aos="fade-right"
                             data-aos-offset="300"
                             data-aos-easing="ease-in-sine">
-                            <img src="img/terno.jpg" className="w-64 h-64  md:min-w-96 md:h-96 rounded-full mb-5 sm:mb-5 lg:mr-20"/>
+                            <img src="img/terno.jpg" className="w-64 h-64  md:min-w-96 md:h-96 rounded-full mb-5 sm:mb-5 lg:mr-20" />
                         </div>
                         {/* Contenido de texto */}
                         <div data-aos="fade-up" data-aos-anchor-placement="center-center" className="text-white text-center sm:text-left">
@@ -24,7 +24,7 @@ export const Banner2 = () => {
                                 👋 ¡Hola! Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero.
                                 Tengo más de un año de experiencia trabajando con interfaces en JavaScript, React JS y TypeScript.
                                 Actualmente curso el 7mo ciclo de Ingeniería de Sistemas y
-                                me apasiona el desarrollo Front-end con React, React Native, VueJS, así como el Análisis de Datos.
+                                me apasiona el desarrollo FullStack con React, React Native, Angular, VueJS, así como el Análisis de Datos.
                                 ¡Un gusto!
                                 <br /><br />
                                 🚀 Trato de aprender y mejorar cada día para brindarles el mejor servicio.
@@ -35,7 +35,7 @@ export const Banner2 = () => {
                                 <li>👋 Me llamo Piero Alejandro Fernández Blas, pero puedes llamarme simplemente Piero, ¡un gusto!</li>
                                 <li>🛠️ Ya más de 1 año desarrollándome en interfaces con JavaScript, ReactJS y TypeScript.</li>
                                 <li>📍 Actualmente me encuentro en el 7mo ciclo de la carrera de Ing. Sistemas.</li>
-                                <li>💡 Intereses en desarrollo Front-end con React, React Native y Análisis de Datos.</li>
+                                <li>💡 Intereses en desarrollo FullStack con React, React Native y Análisis de Datos.</li>
                                 <br /><br />
                                 <li>🚀 Trato de aprender y mejorar cada día para brindarles el mejor servicio.</li>
                             </ul>

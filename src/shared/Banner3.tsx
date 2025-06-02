@@ -15,6 +15,26 @@ export const Banner3 = () => {
             moreInfo: "Usamos (React, tailwindcss, NodeJs, AOS, Flutter, Supabase, Tiptap, Framer-Motion, react-hook-form, react-hot-toast, zod, Tyscript) Integramos pasarela de pago PayPal. Ideal para PYMEs que quieren crecer online.",
             image: "img/eltiocoins.png",
         },
+        
+        {
+            title: "Revista Digital para personas con Ceguera",
+            description: "Diseñamos una revista digital inclusiva orientada a personas con ceguera, enfocándonos en la accesibilidad y experiencia auditiva.",
+            moreInfo: "Utilizaremos tecnologías como NodeJs, React, javascript, Nodemailer,Web Speech API y TailwindCSS",
+            image: "img/revistadigital.png",
+        },
+
+        {
+            title: "CRUD Liquidaciones de Aduanas",
+            description: "Creamos un CRUD para gestionar registros de aduanas.",
+            moreInfo: "Utilizamos plataforma de servicios en la nube AWS (Lambda, DynamoDB, Netlify, IAM, API Gateway) además de React, JSX, Boostrap.",
+            image: "img/aduanas.png",
+        },
+        {
+            title: "Tienda de Videojuegos",
+            description: "En esto proyecto colaborativo del curso de Estructura de datos Desarrollamos un sistema para cliente y administrador de una tienda de videojuegos",
+            moreInfo: "Utilizamos C#, usando la consola como interfaz. El proyecto incluye funcionalidades CRUD completas para gestionar el inventario, registrar ventas, y mantener el control de productos de forma eficiente.",
+            image: "img/gamestop.jpeg",
+        },
         {
             title: "Portara Cuadros",
             description: "Desarrollamos un sitio web para venta de cuadros personalizados.",
@@ -22,31 +42,19 @@ export const Banner3 = () => {
             image: "img/portara.png",
         },
         {
-            title: "Curso Udemy",
-            description: "Primer proyecto de Portafolio en Udemy.",
-            moreInfo: "Creamos un portafolio básico utilizando HTML y CSS.",
-            image: "img/udemy.png",
-        },
-        {
-            title: "CRUD Aduanas",
-            description: "Creamos un CRUD para gestionar registros de aduanas.",
-            moreInfo: "Utilizamos plataforma de servicios en la nube AWS (Lambda, DynamoDB, Netlify, IAM, API Gateway) además de React, JSX, Boostrap.",
-            image: "img/aduanas.png",
-        },
-        {
-            title: "Videojuegos (Proximamente)",
-            description: "Sitio web para retas oponentes en distintos juegos en línea apostando dinero.",
+            title: "Reta 1vs1 de Videojuegos (En proceso)",
+            description: "Sitio web para retas oponentes en distintos juegos en línea apostando dinero real.",
             moreInfo: "Utilizaremos tecnologías como NodeJs, Express, MongoDB, React, Tyscript y TailwindCSS, pasarelas de pago con Stripe.",
             image: "img/versus.png",
         },
         {
-            title: "Parkea YA! (Proximamente)",
+            title: "Parkea YA! (En proceso)",
             description: "Sistema web Administrativo para gestionar estacionamientos.",
             moreInfo: "Utilizaremos tecnologías como NodeJs, SQLserver Managment, React, JSX y TailwindCSS.",
             image: "img/parking.png",
         },
         {
-            title: "App Adopción (Proximamente)",
+            title: "Aplicación Mobile de Adopción (En proceso)",
             description: "Aplicación móvil para adopción de mascotas Android y IOS.",
             moreInfo: "Utilizaremos React Native, SQLite",
             image: "img/adopción.png",
