@@ -11,7 +11,7 @@ export const Footer = () => {
 
                 {/* Texto de Copyright */}
                 <div className="text-center text-sm md:text-left">
-                    <p>© 2025 Piero Fernández. Todos los derechos reservados.</p>
+                    <p>© {new Date().getFullYear()} Piero Fernández. Todos los derechos reservados.</p>
                 </div>
 
                 {/* Iconos de Redes Sociales */}

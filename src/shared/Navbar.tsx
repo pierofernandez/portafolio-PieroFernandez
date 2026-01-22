@@ -11,21 +11,12 @@ export const Navbar = () => {
 
   const [activeSection, setActiveSection] = useState('home');
 
-  const linkClass = (section: string) =>
-    `text-sm md:text-base flex flex-col items-center ${activeSection === section
-      ? 'text-white font-bold'
-      : 'text-[#ccc]'
-    }`;
 
-  const underline = (section: string) =>
-    activeSection === section
-      ? <span className="block w-full h-[2px] bg-white mt-[5px]"></span>
-      : null;
 
 
   return (
-    <nav  className=" hidden md:flex md:mx-[80px] md:py-[10px] md:px-[20px] md:gap-3 md:rounded-[20px] lg:rounded-[30px] lg:shadow-lg bg-gradient-to-r from-[#1e1e1e] to-[#575353] justify-center items-center">
-      <ul  className="flex list-none gap-[30px] md:gap-[40px] lg:gap-[60px] p-0 m-0 justify-center items-center text-center">
+    <nav className="hidden md:flex fixed top-5 left-1/2 transform -translate-x-1/2 z-50 px-10 py-4 gap-6 rounded-full shadow-[0_8px_32px_0_rgba(0,0,0,0.37)] backdrop-blur-xl bg-white/5 border border-white/10 justify-center items-center transition-all duration-300 hover:bg-white/10">
+      <ul className="flex list-none gap-8 lg:gap-12 p-0 m-0 justify-center items-center text-center">
         {[
           { id: 'home', label: 'Home' },
           { id: 'skills', label: 'Skills' },
@@ -36,11 +27,11 @@ export const Navbar = () => {
           <li key={id}>
             <a
               href={`#${id}`}
-              className={linkClass(id)}
+              className={`text-sm lg:text-base transition-colors duration-300 relative group ${activeSection === id ? 'text-white font-semibold' : 'text-gray-400 hover:text-white'}`}
               onClick={() => setActiveSection(id)}
             >
               {label}
-              {underline(id)}
+              <span className={`absolute -bottom-1 left-0 h-[2px] bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 ${activeSection === id ? 'w-full' : 'w-0 group-hover:w-full'}`}></span>
             </a>
           </li>
         ))}

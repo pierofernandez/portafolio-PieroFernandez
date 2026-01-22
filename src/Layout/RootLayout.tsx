@@ -3,12 +3,12 @@ import { Footer } from "../shared/Footer";
 
 export const RootLayout = () => {
     return (
-        <div className="bg-black text-white min-h-screen pt-5 overflow-x-hidden">
-            <main className="max-w-screen-2xl mx-auto px-4">
+        <div className="bg-black text-white min-h-screen overflow-x-hidden">
+            <main className="w-full">
                 <Outlet />
             </main>
-            <Footer/>
+            <Footer />
         </div>
-        
+
     );
 };
