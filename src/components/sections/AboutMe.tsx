@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { IoPersonOutline, IoRocketOutline, IoChatbubbleEllipsesOutline, IoChevronBackOutline, IoChevronForwardOutline } from "react-icons/io5";
 import { ArrowBigRight } from 'lucide-react';
 
-export const Banner2 = () => {
+export const AboutMe = () => {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const scroll = (direction: 'left' | 'right') => {
@@ -112,7 +112,7 @@ export const Banner2 = () => {
                                         Estoy disponible para nuevos retos. Si tienes una idea, hablemos.
                                     </p>
                                 </div>
-                                <a href="#contacto" className="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1 group-hover:translate-x-1 duration-300">
+                                <a href="/contact" className="text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors flex items-center gap-1 group-hover:translate-x-1 duration-300">
                                     Contáctame &rarr;
                                 </a>
                             </div>

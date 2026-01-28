@@ -1,5 +1,5 @@
 
-export const Banner3 = () => {
+export const Projects = () => {
     const cardData = [
         {
             title: "Brillaré",

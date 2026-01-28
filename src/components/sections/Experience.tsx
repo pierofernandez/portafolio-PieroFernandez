@@ -1,6 +1,6 @@
 import { IoCalendarOutline } from "react-icons/io5";
 
-export const Banner6 = () => {
+export const Experience = () => {
 
     const experiencias = [
         {

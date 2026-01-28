@@ -2,7 +2,7 @@ import Aos from "aos";
 import { useEffect } from "react";
 import { FaFigma, FaGithub, FaInstagram, FaLinkedin, FaTiktok } from "react-icons/fa";
 
-export const Banner = () => {
+export const Hero = () => {
 
     useEffect(() => {
         Aos.init({ duration: 800, once: true });
@@ -69,7 +69,7 @@ export const Banner = () => {
                         <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-5 mb-5 md:-mr-20 xl:mr-10">
                             <a
                                 href="/contact"
-                                target="_blank"
+                                target=""
                                 rel="noopener noreferrer"
                                 className="text-sm md:text-lg py-4 px-8 md:py-4 md:px-10 border-none rounded-full bg-white text-black font-semibold hover:bg-gray-200 transition-colors shadow-lg hover:shadow-xl"
                             >

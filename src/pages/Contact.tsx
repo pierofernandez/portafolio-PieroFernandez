@@ -1,11 +1,11 @@
 import SplashCursor from "../animations/SplashCursor";
-import { Banner5 } from "../shared/Banner5";
+import { ContactForm } from "../components/sections/ContactForm";
 
 export const Contact = () => {
 
     return (
-        <div>
-            <Banner5 />
+        <div className="w-full overflow-x-hidden bg-black text-white">
+            <ContactForm />
             <SplashCursor />
         </div>
     );

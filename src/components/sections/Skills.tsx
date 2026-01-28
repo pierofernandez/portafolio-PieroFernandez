@@ -1,4 +1,4 @@
-export const Banner4 = () => {
+export const Skills = () => {
     return (
         <section id="skills" className="w-full pb-10 md:pb-28 overflow-hidden bg-transparent text-white">
             <div className="w-full mb-10 md:mb-24">
